@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--<com.example.customviewdemo.view.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            style="@style/text_flag"
+            android:text="welcome"/>
+
+        <TextView
+            style="@style/text_flag"
+            android:text="IT工程师"/>
+
+        <TextView
+            style="@style/text_flag"
+            android:text="我真是可以的"/>
+
+        <TextView
+            style="@style/text_flag"
+            android:text="你觉得呢"/>
+
+        <TextView
+            style="@style/text_flag"
+            android:text="不要只知道挣钱"/>
+
+        <TextView
+            style="@style/text_flag"
+            android:text="努力ing"/>
+
+        <TextView
+            style="@style/text_flag"
+            android:text="I think I can"/>
+
+    </com.example.customviewdemo.view.FlowLayout>-->
+
+    <!--<com.example.customviewdemo.view.CircleView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        app:circlr_color="@color/colorPrimary"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"   />-->
+
+    <com.example.customviewdemo.view.HorizontalScrollViewEx
+        android:id="@+id/horizontal_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
