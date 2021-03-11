@@ -1,2 +1,10 @@
 include ':app'
+/*setBinding(new Binding([gradle: this]))
+evaluate(new File(
+  settingsDir,
+  '../flutter_view_module/.android/include_flutter.groovy'
+))
 rootProject.name='CustomViewDemo'
+
+include ':flutter_view_module'
+project(':flutter_view_module').projectDir = new File('../flutter_view_module')*/
