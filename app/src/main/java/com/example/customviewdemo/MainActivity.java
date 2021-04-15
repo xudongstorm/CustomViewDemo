@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.customviewdemo.animation.Rotate3dAnimation;
 import com.example.customviewdemo.view.HorizontalScrollViewEx;
+import com.example.customviewdemo.view.InvalidTextView;
 
 import java.util.ArrayList;
 
@@ -40,15 +41,24 @@ public class MainActivity extends AppCompatActivity {
             mListContainer.addView(viewGroup);
         }*/
 
+        InvalidTextView textView = findViewById(R.id.my_tv);
         Button btView = findViewById(R.id.bt_view);
         btView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Rotate3dAnimation animation = new Rotate3dAnimation(0, 270, 0.5f, 0.5f, 0.5f, false);
+                /*Rotate3dAnimation animation = new Rotate3dAnimation(0, 270, 0.5f, 0.5f, 0.5f, false);
                 animation.setDuration(3000);
-                btView.startAnimation(animation);
+                btView.startAnimation(animation);*/
+                textView.invalidate();
             }
         });
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textView.requestLayout();
+            }
+        });
+
     }
 
     private void createList(ViewGroup viewGroup){
